@@ -11,9 +11,23 @@
 */
 
 function fizzBuzz(num) {
-    // Напишите код здесь
+  for (let i = 1; i<= num; i++) 
+  {
+    let three = i % 3;
+    let five = i % 5;
+    if (three == 0) {
+      if (five == 0) {
+        console.log('fizzbuzz');
+      } else {
+        console.log('fizz');
+      };
+    } else if (five == 0) {
+      console.log('buzz');
+    } else {
+      console.log(i);
+    };
+  };
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
-
-console.log(fizzBuzz(15));
+fizzBuzz(15);
