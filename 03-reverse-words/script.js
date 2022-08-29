@@ -9,7 +9,14 @@
 */
 
 function reverseWords(str) {
-    // Напишите код здесь
+  str = str.replace(/[&\/\\#,+()$~%.'":*?<>{}!]/g, '');
+  const arr = str.trim().split(/\s+/);
+  let strOut = '';
+  for (let i = (arr.length - 1); i >= 0; i--)
+  {
+    strOut += arr[i] + ' ';
+  };
+  return strOut.trim();
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
