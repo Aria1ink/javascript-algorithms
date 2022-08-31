@@ -10,9 +10,9 @@
 
 function sumOfTwo(arr, sum) {
   if (arr) {
-    for (let i = 0; i < arr.length; i++) {
-      for (let j = 0; j < arr.length; j++) {
-        if (i != j && arr[i] + arr[j] == sum)
+    for (let firstNumber = 0; firstNumber < arr.length; firstNumber++) {
+      for (let secondNumber = 0; secondNumber < arr.length; secondNumber++) {
+        if (firstNumber != secondNumber && arr[firstNumber] + arr[secondNumber] == sum)
           {
             return true;
           };
