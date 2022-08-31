@@ -8,13 +8,13 @@
 */
 
 function uniq(arr) {
-  let arrOut = [];
+  let result = [];
   for (let item of arr) {
-    if (!arrOut.includes(item)) {
-      arrOut.push(item);
+    if (!result.includes(item)) {
+      result.push(item);
     };
   };
-  return arrOut;
+  return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
