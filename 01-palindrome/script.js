@@ -16,12 +16,12 @@
 function palindrome(str) {
     str = str.toLowerCase();
     str = str.replace(/[&\/\\#,+()$~%.'":*?<>{}! ]/g, '');
-    let j = str.length -1;
+    let reverseCount = str.length -1;
     for (let i = 0; i < str.length; i++) {
-      if (str[i] !== str[j]) {
+      if (str[i] !== str[reverseCount]) {
         return false
       };
-      j--;
+      reverseCount--;
     }
     return true;
 }
