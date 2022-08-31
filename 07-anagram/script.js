@@ -9,7 +9,20 @@
 */
 
 function anagram(str1, str2) {
-    // Напишите код здесь
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
+  if (str1 != str2 && str1.length == str2.length) {
+    str1 = str1.split("").sort().join("");
+    str2 = str2.split("").sort().join("");
+    for (let i = 0; i < str1.length; i++) {
+      if (str1[i] != str2[i]) {
+        return false;
+      };
+    };
+    return true;
+  } else {
+    return false;
+  };
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
