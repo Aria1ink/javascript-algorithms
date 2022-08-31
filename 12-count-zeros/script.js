@@ -7,7 +7,21 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
+  let count = 0;
+  let str = '';
+  if (n > 9) {
+    for (let i = 10; i <= n; i++) {
+      str = i.toString();
+      for (let j = 0; j < str.length; j++) {
+        if (str[j] == '0') {
+          count++;
+        };
+      };
+    };
+    return count;
+  } else {
+    return count;
+  };
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
