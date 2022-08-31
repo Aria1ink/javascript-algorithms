@@ -8,12 +8,11 @@
 
 function countZeros(n) {
   let count = 0;
-  let str = '';
   if (n > 9) {
-    for (let i = 10; i <= n; i++) {
-      str = i.toString();
-      for (let j = 0; j < str.length; j++) {
-        if (str[j] == '0') {
+    for (let number = 10; number <= n; number++) {
+      number = number.toString();
+      for (let j = 0; j < number.length; j++) {
+        if (number[j] == '0') {
           count++;
         };
       };
