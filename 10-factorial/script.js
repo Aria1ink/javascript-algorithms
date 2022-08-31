@@ -8,7 +8,17 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+  let count = 1;
+  if (n > 1) {
+    for (let i = 2; i <= n; i++) {
+      count = count * i;
+    };
+    return count;
+  } else if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return false;
+  };
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
