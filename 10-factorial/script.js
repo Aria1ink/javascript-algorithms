@@ -8,14 +8,14 @@
 */
 
 function factorial(n) {
-  let count = 1;
+  let result = 1;
   if (n > 1) {
-    for (let i = 2; i <= n; i++) {
-      count = count * i;
+    for (let number = 2; number <= n; number++) {
+      result = result * number;
     };
-    return count;
+    return result;
   } else if (n == 0 || n == 1) {
-    return 1;
+    return result;
   } else {
     return false;
   };
