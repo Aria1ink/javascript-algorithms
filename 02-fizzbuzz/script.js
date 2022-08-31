@@ -11,10 +11,10 @@
 */
 
 function fizzBuzz(num) {
-  for (let i = 1; i<= num; i++) 
+  for (let number = 1; number <= num; number++) 
   {
-    let three = i % 3;
-    let five = i % 5;
+    let three = number % 3;
+    let five = number % 5;
     if (three == 0) {
       if (five == 0) {
         console.log('fizzbuzz');
@@ -24,7 +24,7 @@ function fizzBuzz(num) {
     } else if (five == 0) {
       console.log('buzz');
     } else {
-      console.log(i);
+      console.log(number);
     };
   };
 }
