@@ -8,7 +8,7 @@
 
 function capitalize(str) {
   if (str && str != ' ') {
-    let arr = str.trim().split(/\s+/);
+    const arr = str.trim().split(/\s+/);
     let result = '';
     for (let i = 0; i < arr.length; i++) {
       arr[i] = arr[i].replace(arr[i][0], arr[i][0].toUpperCase());
