@@ -7,7 +7,7 @@
 */
 
 function primes(num) {
-  let arrNumbers = [];
+  const arrNumbers = [];
   for (let number = 2; number <= num; number++) {
     nextNumber:
     if (number % 1 == 0 && number % number == 0) {
